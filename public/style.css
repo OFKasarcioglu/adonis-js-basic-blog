@@ -1,4 +1,17 @@
 *{
   font-family: 'SF Pro Display', sans-serif;
-  font-weight: 200;
+  font-weight: 300;
+}
+a{
+  color:white;
+}
+a:hover{
+  color: #222222;
+}
+body{
+  background-color: #dedede;
+}
+.custom_table{
+  border-radius: 10px;
+  color: #fff !important;
 }

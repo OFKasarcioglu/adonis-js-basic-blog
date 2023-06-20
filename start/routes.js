@@ -16,7 +16,6 @@
 /** @type {typeof import('@adonisjs/framework/src/Route/Manager')} */
 const Route = use('Route')
 
-
-Route.get('/', "PostController.index")
-
+Route.on('/').render("home")
+Route.get('/posts', "PostController.index")
 Route.get('/test', () => "Selamlar Ömer")
