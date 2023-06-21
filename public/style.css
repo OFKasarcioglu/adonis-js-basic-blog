@@ -1,6 +1,11 @@
 *{
   font-family: 'SF Pro Display', sans-serif;
   font-weight: 300;
+  -webkit-transition: all 4s ease;
+  -moz-transition: all 4s ease;
+  -ms-transition: all 4s ease;
+  -o-transition: all 4s ease;
+  transition: all 4s ease;
 }
 a{
   color:white;
@@ -14,4 +19,7 @@ body{
 .custom_table{
   border-radius: 10px;
   color: #fff !important;
+
 }
+
+

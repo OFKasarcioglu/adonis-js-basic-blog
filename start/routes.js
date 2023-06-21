@@ -18,4 +18,7 @@ const Route = use('Route')
 
 Route.on('/').render("home")
 Route.get('/posts', "PostController.index")
-Route.get('/test', () => "Selamlar Ömer")
+Route.get('/posts/new', "PostController.newPostForm")
+Route.get('/posts/:id', "PostController.details")
+Route.post('/posts/save', "PostController.save")
+
