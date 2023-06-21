@@ -21,4 +21,6 @@ Route.get('/posts', "PostController.index")
 Route.get('/posts/new', "PostController.newPostForm")
 Route.get('/posts/:id', "PostController.details")
 Route.post('/posts/save', "PostController.save")
-
+Route.get('/posts/update/:id', "PostController.update")
+Route.put('/posts/:id', "PostController.updatePost")
+Route.delete('/posts/:id', "PostController.postDelete")

@@ -1,0 +1,20 @@
+@layout('main')
+@section('content')
+<h3>Yazı Düzenle</h3>
+<hr>
+<form action="{{'/posts/' + post.id + '?_method=PUT'}}" class="form" method="POST">
+    {{ csrfField() }}
+    <div class="form-group">
+        <label>Blog Başlığı</label>
+        <input type="text" name="title" class="form-control" value="{{ post.title }}">
+        {{elIf('<span class="text-danger">$self</span>',getErrorFor('title'),hasErrorFor('title'))}}
+    </div>
+    <div class="form-group">
+        <label>Blog Yazısı</label>
+        <textarea name="description" cols="30" rows="10" class="form-control"> {{ post.description }}</textarea>
+        {{elIf('<span class="text-danger">$self</span>',getErrorFor('description'),hasErrorFor('description'))}}
+
+    </div>
+    <button type="submit" class="btn btn-success btn-block">Kaydet 􀈄</button>
+</form>
+@endsection
